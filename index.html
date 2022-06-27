@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title" class="text-center">欢迎填写永劫无间调查问卷</h1>
+        <p id="descrition" class="text-center">
+          本调查问卷保证绝对私密，了解更多官方信息请前往<a href=""
+            >永劫无间官网</a
+          >
+        </p>
+      </header>
+      <form action="" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter your name"
+            maxlength="5"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="age" id="age-label">Age</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            class="form-control"
+            placeholder="Enter your age"
+            min="10"
+            max="99"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="">请问您的职业</label>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">student</option>
+            <option value="jib">Full time job</option>
+            <option value="free job">Free job</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="">请问您会在游戏上花费多少钱</label>
+          <label
+            ><input
+              type="radio"
+              name="game-money"
+              class="input-radio"
+              value="0"
+            />不花费钱</label
+          >
+          <label for=""
+            ><input
+              type="radio"
+              name="game-money"
+              class="input-radio"
+              value="100"
+            />0元以上100以下</label
+          >
+          <label for=""
+            ><input
+              type="radio"
+              name="game-money"
+              class="input-radio"
+              value="500"
+            />100元以上500以下</label
+          >
+          <label for=""
+            ><input
+              type="radio"
+              name="game-money"
+              class="input-radio"
+              value="1000"
+            />500元以上1000以下</label
+          >
+        </div>
+        <div class="form-group">
+          <p>
+            请问您玩过以下哪些游戏<span class="clue">(下列内容可多选)</span>
+          </p>
+
+          <label>
+            <input
+              type="checkbox"
+              name="Game"
+              id="Game"
+              class="input-checkbox"
+              value="jdqs"
+            />绝地求生</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="Game"
+              id="Game"
+              class="input-checkbox"
+              value="cfcs"
+            />cf或者csgo</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="Game"
+              id="Game"
+              class="input-checkbox"
+              value="lol"
+            />LOL</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="Game"
+              id="Game"
+              class="input-checkbox"
+              value="cod"
+            />战地系列</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="Game"
+              id="Game"
+              class="input-checkbox"
+              value="overwatch"
+            />守望先锋</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="Game"
+              id="Game"
+              class="input-checkbox"
+              value="4399"
+            />4399小游戏等</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="Game"
+              id="Game"
+              class="input-checkbox"
+              value="phonegame"
+            />只玩过手机游戏</label
+          >
+        </div>
+        <div class="form-group">
+          <label
+            >请留下您对我们的意见，用来帮助我们继续提升玩家的游戏体验，谢谢您的参与<span
+              class="clue"
+              >(选填)</span
+            ></label
+          >
+
+          <input
+            type="comments"
+            id="comments"
+            name="comments"
+            class="input-textarea"
+            placeholder="Enter your comment in here"
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">提交</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
